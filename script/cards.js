@@ -1,16 +1,38 @@
 const medicines = document.getElementById("createCard");
 let url = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";
 
-for (let i = 0; i < url.length; i++) {
-  fetch(url + i)
-        .then((response)=> response.json())
-        .then(data => crearTarjetas(data))
-  
-}
+document.addEventListener("DOMContentLoaded", traerProductos)
 
-function crearTarjertas(medicines) {
+
+
+// for (let i = 1; i < 30; i++) {
+//   fetch(url + i)
+//         .then((response)=> response.json())
+//         .then(data => crearTarjetas(data))
   
-}
+// }
+
+// function crearTarjertas(medicine) {
+//   medicines.innerHTML =`<div class="card">
+//   //         <div class="image">
+//   //           <img src="${medicine.imagen}"/>
+//   //         </div>
+//   //         <div class="details">
+//   //           <div class="center">
+//   //             <h1>${medicine.nombre}<br><span>""</span></h1>
+//   //             <p>${medicine.descripcion}</p>
+//   //             <ul>
+//   //               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+//   //               <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+//   //               <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+//   //               <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+//   //               <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+//   //             </ul>
+//   //           </div>
+//   //         </div>
+//   //       </div>`;
+  
+// }
 // async function crearTarjetas() {
 //     let createCard = document.getElementById('createCard');
 //     let medicines = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";

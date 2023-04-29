@@ -1,15 +1,22 @@
 const medicines = document.getElementById("createCard");
-let url = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";
-
-document.addEventListener("DOMContentLoaded", traerProductos)
 
 
+document.addEventListener("DOMContentLoaded", traerProductos);
+
+async function traerProductos() {
+  let url = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";
+  try {
+  
+  } catch (error) {
+    console.log(error)
+  }
+}
 
 // for (let i = 1; i < 30; i++) {
 //   fetch(url + i)
 //         .then((response)=> response.json())
 //         .then(data => crearTarjetas(data))
-  
+
 // }
 
 // function crearTarjertas(medicine) {
@@ -31,7 +38,7 @@ document.addEventListener("DOMContentLoaded", traerProductos)
 //   //           </div>
 //   //         </div>
 //   //       </div>`;
-  
+
 // }
 // async function crearTarjetas() {
 //     let createCard = document.getElementById('createCard');
@@ -40,12 +47,12 @@ document.addEventListener("DOMContentLoaded", traerProductos)
 //     response = await response.json();
 //     response = response.products
 //     let medicamento = response;
-    
+
 //     medicamento.forEach(()=> {
 //         let img = medicamento.imagen;
 //         let name = medicamento.nombre;
 //         let description = medicamento.descripcion;
-//         createCard.innerHTML += 
+//         createCard.innerHTML +=
 //         `<div class="card">
 //         <div class="image">
 //           <img src="${img}"/>

@@ -1,4 +1,4 @@
-const medicines = document.getElementById("createCard");
+
 
 
 document.addEventListener("DOMContentLoaded", traerProductos);
@@ -17,8 +17,32 @@ async function traerProductos() {
 }
 
 function crearTarjetas(productos){
-  
+  let medicines = document.getElementById("createCard");
+  productos.forEach(producto => {
+    const {id, imagen, nombre, descripcion} = producto
+    medicines.innerHTML +=
+    `<div class="card">
+         <div class="image">
+           <img src="${imagen}"/>
+         </div>
+         <div class="details">
+           <div class="center">
+             <h1>${nombre}<br><span>""</span></h1>
+             <p>${descripcion}</p>
+             <ul>
+               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+             </ul>
+           </div>
+         </div>
+       </div>`;
+  });
+  console.log(medicines)
 }
+
 
 // for (let i = 1; i < 30; i++) {
 //   fetch(url + i)

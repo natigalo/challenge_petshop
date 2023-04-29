@@ -1,7 +1,16 @@
 const medicines = document.getElementById("createCard");
 let url = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";
 
+for (let i = 0; i < url.length; i++) {
+  fetch(url + i)
+        .then((response)=> response.json())
+        .then(data => crearTarjetas(data))
+  
+}
 
+function crearTarjertas(medicines) {
+  
+}
 // async function crearTarjetas() {
 //     let createCard = document.getElementById('createCard');
 //     let medicines = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";

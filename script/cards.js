@@ -6,10 +6,18 @@ document.addEventListener("DOMContentLoaded", traerProductos);
 async function traerProductos() {
   let url = "https://pro-talento.up.railway.app/api/mindy/products?tipo=medicamento";
   try {
-  
+    let response = await fetch(url);
+        response = await response.json();
+        response = response.products
+        console.log(response)
+        crearTarjetas(response)
   } catch (error) {
     console.log(error)
   }
+}
+
+function crearTarjetas(productos){
+  
 }
 
 // for (let i = 1; i < 30; i++) {

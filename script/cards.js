@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("DOMContentLoaded", traerProductos);
 
 async function traerProductos() {
@@ -9,7 +6,6 @@ async function traerProductos() {
     let response = await fetch(url);
         response = await response.json();
         response = response.products
-        console.log(response)
         crearTarjetas(response)
   } catch (error) {
     console.log(error)
@@ -40,7 +36,6 @@ function crearTarjetas(productos){
          </div>
        </div>`;
   });
-  console.log(medicines)
 }
 
 

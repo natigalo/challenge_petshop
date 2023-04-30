@@ -17,7 +17,7 @@ function crearTarjetas(productos){
   productos.forEach(producto => {
     const {id, imagen, nombre, descripcion} = producto
     medicines.innerHTML +=
-    `<div class="card">
+    `<div class="card col-lg-10 col-sm-8 m-2">
          <div class="image">
            <img src="${imagen}"/>
          </div>

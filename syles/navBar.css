@@ -96,8 +96,9 @@ body, .nav, .menu {
 
 
 .card {
+    background-color: #ff3636;
     margin-top: 20%;
-    border: 2px;
+    border: none;
     border-radius: 20px;
     transform: translate(-50%,-50%);
     width: 400px;
@@ -105,12 +106,14 @@ body, .nav, .menu {
     background: #000;
 }
 .card .image {
+    border:none;
     width: 100%;
     height: 100%;
     overflow: hidden;
     border-radius: 20px;
 }
 .card .image img {
+    border:none;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -183,4 +186,8 @@ body, .nav, .menu {
 }
 .card .details .center ul li a:hover {
     background: #ff3636;
+}
+
+.container {
+    margin-top: 20%;
 }

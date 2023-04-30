@@ -96,24 +96,27 @@ body, .nav, .menu {
 
 
 .card {
-    position: absolute;
-    border: 2px;
+    background-color: #ff3636;
+    margin-top: 20%;
+    border: none;
     border-radius: 20px;
-      top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%);
-    width: 360px;
-    height: 400px;
+    width: 400px;
+    height: 450px;
     background: #000;
 }
 .card .image {
+    border:none;
     width: 100%;
     height: 100%;
     overflow: hidden;
     border-radius: 20px;
 }
 .card .image img {
+    border:none;
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     transition: .5s;
 }
 .card:hover .image img {
@@ -183,4 +186,8 @@ body, .nav, .menu {
 }
 .card .details .center ul li a:hover {
     background: #ff3636;
+}
+
+.container {
+    margin-top: 20%;
 }

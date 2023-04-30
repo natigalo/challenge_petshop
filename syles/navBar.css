@@ -1,99 +1,63 @@
-body {
+* {
     margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: var(--thistle);
-    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-direction: column;
-    
+}
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:var(--light-red);
+	margin-bottom:20px;
 }
 
-body, .nav, .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
 }
 
-.nav {
-    position: relative;
-    background-color: #fff;
-    padding: 20px;
-    transition: 0.5s;
-    border-radius: 50px;
-    overflow: hidden;
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
-    display: flex;
-    align-self: flex-end;
+header a .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:100px;
+	float:left;
+    height: 120px;
 }
 
-.menu {
-    margin: 0;
-    padding: 0;
-    width: 0;
-    overflow: hidden;
-    transition: 0.5s;
+header nav {
+	float:right;
+	line-height:100px;
 }
 
-.nav input:checked ~ .menu {
-    width: 450px;
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
 }
 
-.menu li {
-    list-style: none;
-    margin: 0 10px;
+header nav a:hover {
+	background-color:#7e9dc9ff;
+	border-radius:50px;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: #666;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: 0.5s;
+.header2 {
+	position: fixed;
+	height:50px;
 }
 
-.menu li a:hover {
-    color: #161919;
+.header2 .logo {
+    height: 50px;
 }
 
-.nav input {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    opacity: 0;
+.header2 nav {
+	line-height:50px;
 }
-
-.nav span {
-    position: absolute;
-    left: 30px;
-    width: 30px;
-    height: 4px;
-    border-radius: 50px;
-    background-color: #666;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.nav input:checked ~ span {
-    background-color: #f974a1;
-}
-
-.nav span:nth-child(2) {
-    transform: translateY(-8px);
-}
-
-.nav input:checked ~ span:nth-child(2) {
-    transform: translateY(0) rotate(-45deg);
-}
-.nav span:nth-child(3) {
-    transform: translateY(8px);
-}
-
-.nav input:checked ~ span:nth-child(3) {
-    transform: translateY(0) rotate(45deg);
-}
-
-
 
 .card {
     background-color: #ff3636;
@@ -114,6 +78,7 @@ body, .nav, .menu {
 }
 .card .image img {
     border:none;
+    background-size: cover;
     object-fit: cover;
     width: 100%;
     height: 100%;

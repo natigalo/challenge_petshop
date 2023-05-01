@@ -1,43 +1,53 @@
 body {
     background: #f1f1f1;
 }
-.contenedor{
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	overflow: hidden;
+
+.contenedor {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 
 .wave-banner {
-	background-color: #87CEEB; /* color de fondo del banner */
-	color: #fff; /* color del texto del banner */
-	padding: 0px; /* espacio alrededor del contenido */
-	position: relative; /* posición relativa para poder crear la forma de ola */
-  }
-  
-  .wave-banner::before {
-	content: "";
-	position: absolute;
-	top: -50px; /* ajusta la posición de la forma de ola */
-	left: 10;
-	width: 100%;
-	height: 200px;
-	
-	background-size: cover;
-	z-index: -1; /* envía la forma de ola detrás del contenido del banner */
-  }
+    background-color: #e93b35ff;
+    /* color de fondo del banner */
+    background-image: url(../images/perro_fondo_rojo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    color: #fff;
+    /* color del texto del banner */
+    padding: 0px;
+    /* espacio alrededor del contenido */
+    position: relative;
+    /* posición relativa para poder crear la forma de ola */
+}
 
+.wave-banner::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    /* ajusta la posición de la forma de ola */
+    left: 10;
+    width: 100%;
+    height: 200px;
 
-@charset "UTF-8";
+    background-size: cover;
+    z-index: -1;
+    /* envía la forma de ola detrás del contenido del banner */
+}
+
+/* @charset "UTF-8"; */
 
 /*PEN STYLES*/
 * {
     box-sizing: border-box;
 }
 
-
 .blog-card {
-	margin-top: 10%;
+    margin-top: 10%;
     display: flex;
     margin: 1 rem auto;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
@@ -55,7 +65,7 @@ body {
 }
 
 .blog-card a:hover {
-    color: #5ad67d;
+    color: #e93b35ff;
 }
 
 .blog-card:hover .photo {
@@ -171,7 +181,7 @@ body {
 }
 
 .blog-card .description .read-more a {
-    color: #5ad67d;
+    color: #e93b35ff;
     display: inline-block;
     position: relative;
 }
@@ -203,7 +213,7 @@ body {
     content: "";
     position: absolute;
     height: 5px;
-    background: #5ad67d;
+    background: #e93b35ff;
     width: 35px;
     top: -0.75rem;
     border-radius: 3px;

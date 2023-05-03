@@ -1,43 +1,41 @@
-
-.contenedor{
-	/* flex-direction: column;
+.contenedor {
+    /* flex-direction: column;
 	justify-content: space-between;
 	align-items: center; */
-	overflow: hidden;
+    overflow: hidden;
     padding: 0px 0;
     width: 100%;
-    
-    margin: auto;
 
+    margin: auto;
 }
 
 .wave-banner {
-	background-image: url(../images/perro_fondo_rojo.jpg);
+    background-image: url(../images/perro_fondo_rojo.jpg);
     height: 500px;
     background-size: cover;
     background-attachment: fixed;
-	color: #fff; /* color del texto del banner */
-	padding: 0px; /* espacio alrededor del contenido */
-	position:  relative/* posición relativa para poder crear la forma de ola */
-  }
-.wave{
+    color: #fff;
+    /* color del texto del banner */
+    padding: 0px;
+    /* espacio alrededor del contenido */
+    position: relative;
+    /* posición relativa para poder crear la forma de ola */
+}
+
+.wave {
     position: absolute;
     bottom: -5px;
-    width: 100%
+    width: 100%;
 }
- 
 
-
-@charset "UTF-8";
 
 /*PEN STYLES*/
 * {
     box-sizing: border-box;
 }
 
-
 .blog-card {
-	margin-top: 10%;
+    margin-top: 10%;
     display: flex;
     margin: 1 rem auto;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);

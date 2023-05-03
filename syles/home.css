@@ -1,31 +1,31 @@
-body {
-    background: #f1f1f1;
-}
+
 .contenedor{
-	flex-direction: column;
+	/* flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center; */
 	overflow: hidden;
+    padding: 0px 0;
+    width: 100%;
+    
+    margin: auto;
+
 }
 
 .wave-banner {
-	background-color: #87CEEB; /* color de fondo del banner */
+	background-image: url(../images/perro_fondo_rojo.jpg);
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
 	color: #fff; /* color del texto del banner */
 	padding: 0px; /* espacio alrededor del contenido */
-	position: relative; /* posición relativa para poder crear la forma de ola */
+	position:  relative/* posición relativa para poder crear la forma de ola */
   }
-  
-  .wave-banner::before {
-	content: "";
-	position: absolute;
-	top: -50px; /* ajusta la posición de la forma de ola */
-	left: 10;
-	width: 100%;
-	height: 200px;
-	
-	background-size: cover;
-	z-index: -1; /* envía la forma de ola detrás del contenido del banner */
-  }
+.wave{
+    position: absolute;
+    bottom: -5px;
+    width: 100%
+}
+ 
 
 
 @charset "UTF-8";
@@ -55,7 +55,7 @@ body {
 }
 
 .blog-card a:hover {
-    color: #5ad67d;
+    color: #ff8889;
 }
 
 .blog-card:hover .photo {
@@ -171,7 +171,7 @@ body {
 }
 
 .blog-card .description .read-more a {
-    color: #5ad67d;
+    color: #ff8889;
     display: inline-block;
     position: relative;
 }
@@ -203,7 +203,7 @@ body {
     content: "";
     position: absolute;
     height: 5px;
-    background: #5ad67d;
+    background: #ff8889;
     width: 35px;
     top: -0.75rem;
     border-radius: 3px;

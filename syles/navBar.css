@@ -29,7 +29,7 @@ header .logo {
     color: #f2f2f2;
     line-height: 100px;
     float: left;
-    height: 100px;
+    height: 120px;
     border-radius: 55px;
     
 }
@@ -41,12 +41,11 @@ header nav {
 
 header nav a {
     display: inline-block;
-    
     color: var(--light-red);
     text-decoration: none;
-    padding: 10px 3px ;
+    padding: 10px;
     line-height: normal;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     -webkit-transition: all 200ms ease;
     -o-transition: all 100ms ease;

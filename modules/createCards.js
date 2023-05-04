@@ -2,7 +2,7 @@ function createCards(productos) {
   let medicines = document.getElementById("createCard");
   productos.forEach((producto) => {
     const { id, imagen, nombre, descripcion } = producto;
-    medicines.innerHTML += `<div class="card col-lg-10 col-sm-8 m-2">
+    medicines.innerHTML += `<div class="card tCard col-lg-10 col-sm-8 m-2">
            <div class="image">
              <img src="${imagen}"/>
            </div>

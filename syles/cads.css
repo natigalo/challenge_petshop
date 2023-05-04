@@ -3,7 +3,6 @@
     margin-top: 20%;
     border: none;
     border-radius: 20px;
-    transform: translate(-50%,-50%);
     width: 400px;
     height: 450px;
     background: #000;
@@ -93,4 +92,5 @@
 
 .container {
     margin-top: 20%;
+  
 }

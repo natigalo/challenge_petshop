@@ -17,6 +17,7 @@ function createCards(productos) {
                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                </ul>
+               <button class="addToCart" name='${producto._id}'>🛒</button>
              </div>
            </div>
          </div>`;
